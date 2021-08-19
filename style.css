@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+
+:root{
+    --primary-color : aqua;
+    --secondary-color: #191F42;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+p{
+    color: var(--secondary-color); 
+    font-size: larger;   
+}
+
+h1{
+    background-color: var(--secondary-color);
+    display: inline-block;
+    color: var(--primary-color);
+    padding: 10px;
+}
+
+label, caption{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+#output{
+    margin: 1rem 0;    
+}
+
+#output table, th, td{
+    padding: 0.2rem;
+    color: var(--primary-color);
+    background-color:var(--secondary-color);
+   
+    border-collapse: collapse;
+}
+
+.main{
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    min-height: 300px;
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+
+input{
+    width: 100%;
+    padding: 1rem;
+    height: 50px;
+    display: block;
+    border-radius: 1rem;
+    border: 0;
+    margin: 10px;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    margin: 1rem auto 1rem;
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.no-of-notes{
+    
+    font-weight: bold;
+}
+
+th,td{
+    word-wrap: break-word;
+    padding: 5px;
+}
+
+/* footer */
+
+.footer {
+    margin-top: 150px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: center;
+}
+
+.footer .link {
+    color: white;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+.footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+/**spcae**/
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.list-space {
+    padding-bottom: 2rem;
+}
+.list-non-bullets {
+    list-style: none;
+}
+
+
+.list-item-inline {
+    display: inline;
+    padding-right: 0rem 0.5rem;
+}
+
+
+
+.icon-social {
+    font-size: 24px;
+
+}
+
+
+.footer-list li {
+
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+.bottom{
+    color: white;
+    padding-bottom: 0px;
+}
