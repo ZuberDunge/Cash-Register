@@ -90,9 +90,9 @@ button{
     background-color:var(--secondary-color);
     color: var(--primary-color);
     font-weight: bold;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
+
 .no-of-notes{
     
     font-weight: bold;
