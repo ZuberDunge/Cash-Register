@@ -22,18 +22,20 @@
         <label for="bill-amount">Bill Amount:</label>
         <input type="number" id="bill-amount" placeholder="Enter the Bill Amounts in Digits Only">
 
-       
+        <button id="next-btn">Next</button>
 
         <p id="error-msg">
 
         </p>
-    
-
-        <label for="cash-given">Cash Given:</label>
-        <input type="number" id="cash-given">
-        <button id="check-btn">Check</button>
+        
+<div id="after-next" style="display: none;">
+    <label for="cash-given">Cash Given:</label>
+    <input type="number" id="cash-given">
+    <button id="check-btn">Check</button>
+</div>
+        
     </div>
-<div class="table-section">
+<div class="table-section" style="display: none;">
         <table class="change-tbl">
             <caption>Return Change</caption>
             <tr>
