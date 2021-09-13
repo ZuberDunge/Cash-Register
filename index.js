@@ -12,6 +12,7 @@ const tableSection = document.querySelector(".table-section");
 nextButton.addEventListener("click", ()=>{
 if(Number(billAmount.value)>=1){
     afterNext.style.display=`block`;
+    message.style.display = "none";
 }else{
 
 
