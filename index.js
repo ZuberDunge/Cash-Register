@@ -15,7 +15,7 @@ if(Number(billAmount.value)>=1){
     message.style.display = "none";
 }else{
 
-
+    afterNext.style.display=`none`;
 showMessage("Enter a valid amount ");
 }
 });
@@ -34,6 +34,7 @@ let billAmountValue = Number(billAmount.value);
                     calculateChange(amountToBeReturned);
                     tableSection.style.display = `block`;
                 } else {
+                    tableSection.style.display = `none`;
                     showMessage("do you wanna wash the plates?");
                 }
 
