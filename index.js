@@ -13,6 +13,7 @@ nextButton.addEventListener("click", ()=>{
 if(Number(billAmount.value)>=1){
     afterNext.style.display=`block`;
     message.style.display = "none";
+    nextButton.style.display = "none";
 }else{
 
     afterNext.style.display=`none`;
@@ -29,20 +30,26 @@ let billAmountValue = Number(billAmount.value);
      
     if (billAmountValue > 0) {
 
-                if (cashGivenValue >= billAmountValue) {
+                if (cashGivenValue > billAmountValue) {
                     const amountToBeReturned = cashGivenValue - billAmountValue;
                     calculateChange(amountToBeReturned);
                     tableSection.style.display = `block`;
-                } else {
+                } else if (cashGivenValue <= 0){
+                    tableSection.style.display = `none`;
+                    showMessage("enter valid input");
+                }else if (cashGivenValue < billAmountValue){
                     tableSection.style.display = `none`;
                     showMessage("do you wanna wash the plates?");
+                } else if(billAmountValue === cashGivenValue ){
+                    showMessage("No Need To Return Anything!");
+            
                 }
 
-
-                
-
+             
 
 
+
+    
     } else {
         showMessage("Entered amount is invalid");
     }
