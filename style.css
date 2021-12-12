@@ -3,7 +3,8 @@
 :root {
     --primary-color: #EDF2F4;
     --secondary-color: #2e4eef;
-    --third-color: #EDF2F4
+    --third-color: #EDF2F4;
+    --rich-black: #042A2B
 }
 
 * {
@@ -111,7 +112,7 @@ table {
     right: 1%;
     background-color: var(--primary-color);
     left: 1%;
-    border: 2px solid #042A2B;
+    border: 2px solid var(--rich-black);
     max-width: 350px;
     width: 90%;
     margin: auto;
@@ -339,12 +340,12 @@ img {
 }
 
 .bottom a:hover {
-    color: #042A2B;
-    border-bottom: 2px solid #042A2B;
+    color: var(--rich-black);
+    border-bottom: 2px solid var(--rich-black);
 }
 
 .social:hover {
-    color: #042A2B;
+    color: var(--rich-black);
 }
 
 .bottom a {
@@ -354,7 +355,7 @@ img {
 }
 
 .rich-black {
-    color: #042A2B !important;
+    color: var(--rich-black) !important;
 }
 
 label {
@@ -362,5 +363,5 @@ label {
 }
 
 .nav a:hover {
-    color: #042A2B !important;
+    color: var(--rich-black) !important;
 }
