@@ -12,8 +12,12 @@ const App = document.querySelector(".flex")
 var rootStyle = document.querySelector(':root');
 // const colorPicker = document.querySelector("#color-picker")
 
-billAmount.addEventListener("keydown", () => {
-    nextButton.style.display = "block";
+billAmount.addEventListener("input", (e) => {
+    if (billAmount.value.length == 0) {
+        nextButton.style.display = "none";
+    } else {
+        nextButton.style.display = "block";
+    }
 });
 
 // colorPicker.addEventListener("input", (e) => {
@@ -21,8 +25,12 @@ billAmount.addEventListener("keydown", () => {
 // })
 
 
-cashGiven.addEventListener("keydown", () => {
-    checkButton.style.display = "block";
+cashGiven.addEventListener("input", () => {
+    if (cashGiven.value.length == 0) {
+        checkButton.style.display = "none";
+    } else {
+        checkButton.style.display = "block";
+    }
 });
 
 nextButton.addEventListener("click", () => {
